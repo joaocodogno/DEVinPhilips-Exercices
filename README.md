@@ -5,7 +5,7 @@ This repository contains all the exercises that were done during the fullstack w
 - Main Elements; Semantic Elements; 
 - Selectors; Main Styles; Layouts; Flexbox
 
-##### WEEK 02 - JavaScript
+##### WEEK 02 - JAVASCRIPT
 - Variables; Data Types; Arithmetic Logical and Relational Opearators; Conditional and Decision Loop Structure
 
 ### More informations about the course:
