@@ -6,7 +6,10 @@ This repository contains all the exercises that were done during the fullstack w
 - Selectors; Main Styles; Layouts; Flexbox
 
 ##### WEEK 02 - JAVASCRIPT
-- Variables; Data Types; Arithmetic Logical and Relational Opearators; Conditional and Decision Loop Structure
+- Primitive Data Types; Arithmetic Logical and Relational Opearators; Conditional and Decision Loop Structure
+
+##### WEEK 03 - JAVASCRIPT
+- ES6; Composite Data Types; Functions and Arrow Functions; Scope (const, let, var); Rest; Spread; Destruct
 
 ### More informations about the course:
 - Beginning of the course: oct.2022
