@@ -2,27 +2,26 @@ const ex1 = document.querySelector('#ex1')
 
 ex1.addEventListener('click', () => {
     function procuraMinMax (arr) {
-        let menor = 0
-        let maior = 0
-
-        if (!arr.some(Number)) {
-            console.log('Não é possível encontrar')
-            return
+  
+        if (!arr?.some(Number)) { // o ? teste primeiro se é  não é um array
+            text = 'Não é possível encontrar'
+            return text
         }
-
+    
+        let min = arr[0]
+        let max = arr[0]
+    
         for (i = 0; i < arr.length; i++) {
-            if (arr[i] < menor) {
-                menor = arr[i]
+            if (arr[i] < min) {
+                min = arr[i]
+            }
+            if (arr[i] > max) {
+                max = arr[i]
             }
         }
-        for (j = 0; j < arr.length; j++) {
-            if (arr[j] > maior) {
-                maior = arr[j]
-            }
-        }
-        text = `O menor valor é: ${menor}\nO maior valor é: ${maior}`
+        text = `O menor valor é: ${min}\nO maior valor é: ${max}`
         return text
     }
-    procuraMinMax(['a', 'b', 'c', 2, 5, 3, 7, -1, 8, 4])
+    procuraMinMax([1, 2, 3])
     console.log(text)
 })

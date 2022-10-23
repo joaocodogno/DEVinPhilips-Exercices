@@ -1,9 +1,9 @@
-const mensagemArrow = document.querySelector('#ex2')
+const ex2 = document.querySelector('#ex2')
 
-mensagemArrow.addEventListener('click', () => {
-    const mensagemOla = nome => {
-        console.log(`Olá ${nome}`)
-        return
+ex2.addEventListener('click', () => {
+    const mensagemOla = name => {
+        return `Olá ${name}`
+        
     }    
     console.log(mensagemOla('João'))
 })
