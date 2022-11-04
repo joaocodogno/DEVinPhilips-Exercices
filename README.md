@@ -11,6 +11,9 @@ This repository contains all the exercises that were done during the fullstack w
 ##### WEEK 03 - JAVASCRIPT
 - ES6; Composite Data Types; Functions and Arrow Functions; Scope (const, let, var); Rest; Spread; Destruct
 
+##### WEEK 04 - JAVASCRIPT
+- Arrays; Objects; Events
+
 ### More informations about the course:
 - Beginning of the course: oct.2022
 - Forecast of end: jul.2023
