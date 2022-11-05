@@ -14,7 +14,7 @@ This repository contains all the exercises that were done during the fullstack w
 ##### WEEK 04 - JAVASCRIPT
 - Arrays; Objects; Events
 
-##### WEEK 04 - JAVASCRIPT
+##### WEEK 05 - JAVASCRIPT
 - Classes; Modules; Getters & Setters
 
 ### More informations about the course:
