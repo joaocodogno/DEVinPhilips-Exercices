@@ -17,6 +17,9 @@ This repository contains all the exercises that were done during the fullstack w
 ##### WEEK 05 - JAVASCRIPT
 - Classes; Modules; Getters & Setters
 
+##### WEEK 06 - JAVASCRIPT
+- Async Functions; Promises; Async/Await; JSON; Local Storage; Fetch API
+
 ### More informations about the course:
 - Beginning of the course: oct.2022
 - Forecast of end: jul.2023
