@@ -21,7 +21,7 @@ This repository contains all the exercises that were done during the fullstack w
 - Async Functions; Promises; Async/Await; JSON; Local Storage; Fetch API
 
 ##### WEEK 07 - PROJECT
-- practical project applying the concepts from previous weeks
+- Practical project applying the concepts from previous weeks
 
 ##### WEEK 08 - ANGULAR
 - Introduction; Initial Setup (installation and settings); Angular CLI; First Project; Knowing the Structure 
