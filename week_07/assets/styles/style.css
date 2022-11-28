@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body, html {
+  height: calc(100vh - 100px);
+}
+
+:root{
+  --blue: rgba(146, 210, 229, 1);
+  --light-blue: rgb(221, 234, 238);
+  --light-orange: rgba(255, 246, 239, 1);
+  --orange: rgba(255, 171, 100, 1);
+  --black: rgb(54, 54, 54);
+}
+
+.header{
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  gap: 10px;
+  background-image: linear-gradient(var(--blue), 80%, var(--light-orange));
+
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#logo{
+  height: 90%;
+  margin: 15px
+}
+
+.header h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.buttonInfos {
+  width: 100px;
+  height: 40px;
+  margin: 15px;
+  color: none;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  margin-top: 100px;
+  background-color: var(--light-orange);
+  height: 100%;
+  position:static;
+
+  display: flex;
+}
+
+.register{
+  background-image: linear-gradient(var(--light-orange), 5%, var(--blue), 95%, var(--light-orange));
+  display: flex;
+  flex: 2;
+  margin-bottom: 50px;
+  left: 0;
+}
+
+.form {
+  width: 100%;
+  margin: 15px 30px;
+  gap: 12px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form label{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form input {
+  padding: 5px 5px;
+  min-height: 30px;
+  border-radius: 5px;
+}
+
+.form input:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.form input:focus {
+  outline: 2px solid var(--blue);
+}
+
+.form select {
+  min-height: 30px;
+  border-radius: 5px;
+}
+
+.form select:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.form select:focus {
+  outline: 2px solid var(--blue);
+}
+
+.form textarea {
+  padding: 5px 5px;
+  min-height: 30px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form textarea:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.form textarea:focus {
+  outline: 2px solid var(--blue);
+}
+
+.form select:invalid {
+  color: gray;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.buttons{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+.buttonClean{
+  width: 140px;
+  height: 40px;
+  color: var(--orange);
+  background: var(--light-orange);
+  border: 1px solid var(--orange);
+  border-radius: 20px;;
+  text-shadow: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonRegister {
+  width: 140px;
+  height: 40px;
+  color: var(--light-orange);
+  background: var(--orange);
+  border: 1px solid var(--light-orange);
+  border-radius: 20px;;
+  text-shadow: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view{
+  margin: 15px 20px;
+  gap: 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.cards{
+  gap: 10px;
+  margin: 0px 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: var(--light-blue);
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  min-height: 100px;
+  min-width: 150px;
+  flex-grow: 1;
+  color: var(--black);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: var(--blue);
+}
+
+.card-select{
+  background-color: var(--blue);
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  min-height: 100px;
+  min-width: 150px;
+  flex-grow: 1;
+  color: var(--black);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-card {
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.input-search {
+  width: calc(100% - 150px);
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.input-search:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.input-search:focus {
+  outline: 2px solid var(--orange);
+}
+
+.button-search {
+  width: 50px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.button-search:before {
+  content: "\f002";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 20px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.button-search:hover{
+  background-color: var(--orange);
+}
+
+.button-clean {
+  width: 50px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.button-clean:before {
+  content: "\f021";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 20px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.button-clean:hover {
+  background-color: var(--orange);
+}
+
+.list-block {
+  margin-bottom: 50px;
+  overflow-y: scroll;
+}
+
+.list-block::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  padding: 0px 10px 10px;
+  gap: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.clue {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(143, 143, 143);
+  background-color: var(--orange);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botton {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.clue-title {
+  text-align: center;
+  margin-right: 40px;
+}
+
+.delete-clue {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  font-size: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-clue:before {
+  content: "\f00d";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+
+.clue-language {
+  text-align: center;
+}
+
+.clue-category {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 0.5rem;
+  min-width: 60px;
+    
+  display: flex;
+  max-width: 25%;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clue-description {
+  margin: 10px 0px;
+  font-size: 12px;
+}
+
+.clue-video {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.clue-video:before {
+  content: "\f03d";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.button-edit {
+  color: none;
+  background: none;
+  cursor: pointer;
+  margin: 5px 5px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.button-edit:before {
+  content: "\f044";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(var(--light-orange), 20%, var(--blue));
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer p{
+  font-size: 10px;
+  text-align: center;
+}
+
+#instagram {
+  width: 20px;
+  height: 20px;
+}
+
+#twitter {
+  width: 20px;
+  height: 15px;
+}
+
+#linkedin {
+  width: 25px;
+  height: 25px;
+}
+
+#facebook {
+  width: 20px;
+  height: 15px;
+}
+
+
+
+

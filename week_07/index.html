@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/style-popup.css">
+  <script src="./assets/scripts/app.js" async></script>
+  <script src="./assets/scripts/pop-up.js" async></script>
+  <title>DEVinKnowledge</title>
+</head>
+<body>
+  <header class="header">
+    <img id="logo" src="./assets/images/logo.png" alt="">
+    <h1>DEV IN KNOWLEDGE</h1>
+    <button id="buttonInfos" class="buttonInfos">+ INFOS</button>
+  </header>
+
+  <main class="main">
+    <section class="register">
+      <form id="form" class="form">
+        
+        <div class="inputs">
+          <label for="title">Titulo</label>
+          <input 
+            id="title" 
+            type="text" 
+            minlength="8"
+            maxlength="64"
+            placeholder="Digite o título da sua dica"
+            required
+            />
+        </div>
+        
+        <div class="inputs">
+          <label for="language">Linguagem</label>
+          <input 
+            id="language" 
+            type="text" 
+            minlength="2"
+            maxlength="16"
+            placeholder="Digite a(s) linguagem(ens) de programação utilizada(s)"
+            required
+            />
+        </div>
+
+        <div class="inputs">
+          <label for="category">Categoria</label>
+          <select id="category" required>
+            <option value="" disabled selected>Selecione a Categoria</option>
+          </select>
+        </div>
+
+        <div class="inputs">
+          <label for="description">Descrição</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Faça uma descrição da sua dica" 
+            cols="50"
+            rows="8"
+            minlength="16"
+            maxlength="512"
+            required></textarea>
+        </div>
+
+        <div class="inputs">
+          <label for="video">Video do YouTube</label>
+          <input 
+            id="video" 
+            type="url"
+            placeholder="Insira a URL de um vídeo explicativo (opcional)"
+            />
+        </div>
+        
+        <div class="buttons">
+          <button type="reset" id="buttonClean" class="buttonClean">Limpar</button>
+          <button type="submit" id="buttonRegister" class="buttonRegister">Cadastrar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="view">
+      <section>
+        <ul id="cards" class="cards"></ul>
+      </section>
+
+      <section class="search">
+        <input id="inputSearch" class="input-search" type="text" placeholder="Busca uma dica pelo nome"/>
+        <button id="buttonSearch" class="button-search"></button>
+        <button id="buttonClean" class="button-clean"></button>
+      </section>
+
+      <section class="list-block">
+        <ul id="list" class="list"></ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img id = "instagram"; src="./assets/images/instagram-logo.png" alt="instagram logo">
+    <img id = "twitter"; src="./assets/images/twitter-logo.png" alt="twitter logo">
+
+    <p>
+      Desenvolvido por JoaoCodogno® <br>
+      Av Fake, 250 - 04204-023 - São Paulo - SP <br>
+    </p>
+
+    <img id = "linkedin" src="./assets/images/linkedin-logo.png" alt="linkedin logo">
+    <img id= "facebook" src="./assets/images/facebook-logo.png" alt="facebook logo">
+  </footer>
+
+  <div class="popup-wrapper">
+    <div class="popup">
+      <div class="popup-close">x</div>
+      <div class="popup-content">
+        <h4>MAIS INFORMAÇÕES SOBRE DEV IN KNOWLEDGE</h4>
+        <p>Esta aplicação permite o cadastro de dicas relacionadas a área de tecnologia. <br> <br> Para cadastrar uma dica, utilize o formulário da direita e preencha os campos título, linguagem, categoria e descrição (o campo vídeo é opcional, no entanto aceita apenas URL). <br> <br> Ao cadastrar uma dica, ela aparecerá na área de visualização a esquerda. <br> <br> Para filtrar uma dica, utilize os cards para filtrar por categoria ou a barra de busca para filtrar pelo nome. <br> <br> Para limpar os filtros, clique no botão 'refresh' ao lado do botão pesquisar <br><br> Para editar uma dica já cadastrada, clica no ícone editar no canto inferior direito da dica a ser editada. <br> <br> Para deletar uma dica cadastrada, clique no 'X' localizado no canto superior direito de cada dica.</p>
+        <button id="popup-confirm" class="popup-confirm">OK</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
