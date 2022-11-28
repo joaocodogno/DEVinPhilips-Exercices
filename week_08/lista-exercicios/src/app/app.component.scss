@@ -1,0 +1,12 @@
+html {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 576px;
+  max-width: 576px;
+}
