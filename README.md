@@ -26,6 +26,15 @@ This repository contains all the exercises that were done during the fullstack w
 ##### WEEK 08 - ANGULAR
 - Introduction; Initial Setup (installation and settings); Angular CLI; First Project; Knowing the Structure 
 
+##### WEEK 09 - ANGULAR
+- Bootstrap; Components; Property Binding; Input; Output; Dependency Injection
+
+##### WEEK 10 - ANGULAR
+- Events; Routes; Navigation; Security Navigation;
+
+##### WEEK 11 - ANGULAR
+- Decorators; NgIf; NgFor; NgClass; NgStyle; NgSwitch; NgContent; NgTemplate
+
 ### More informations about the course:
 - Beginning of the course: oct.2022
 - Forecast of end: jul.2023
