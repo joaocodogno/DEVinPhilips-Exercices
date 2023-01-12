@@ -5,16 +5,26 @@ import { AppComponent } from './app.component';
 import { NotificationListComponent } from './notification-list/notification-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { FilterButtonsComponent } from './notification-list/filter-buttons/filter-buttons.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotificationListComponent,
     FooterComponent,
-    AccordionComponent
+    AccordionComponent,
+    FilterButtonsComponent,
+    HomeComponent,
+    AboutComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.scss']
 })
 export class NotificationListComponent {
+  read = 'list-group-item list-group-item-action active" aria-current="true" style="border-radius: 10px;';
+  unread = 'opacity-50 list-group-item list-group-item-action active" aria-current="true" style="border-radius: 10px;';
+
+  buttons = [
+    {
+      name: 'Todos'
+    },
+    {
+      name: 'Lidos'
+    },
+    {
+      name: 'Não Lidos'
+    }
+  ]
+ 
   notifications = [
     {
       id: 1,
@@ -41,12 +56,12 @@ export class NotificationListComponent {
     }
   ];
 
-  read = 'list-group-item list-group-item-action active" aria-current="true" style="border-radius: 10px;';
-  unread = 'opacity-50 list-group-item list-group-item-action active" aria-current="true" style="border-radius: 10px;';
 
   alteraCor(id: number) {
     const lido = this.notifications.find((notification) => notification.id === id)
-    console.log(lido)
-    lido?.read === false ? lido.read = true : console.log('oi')
+    // lido?.read === false ? lido.read = true : console.log('oi')
+    if (lido?.read === false) {
+      lido.read = true
+    }
   }
 }

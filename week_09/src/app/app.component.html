@@ -4,4 +4,9 @@
 
 <app-modal></app-modal>
 
-<app-card></app-card>
+<app-card 
+  [nome]="personagem.nome"
+  [imagem]="personagem.imagem"
+  [nomeAtor]="personagem.nomeAtor"
+  [descricao]="personagem.descricao">
+</app-card>
